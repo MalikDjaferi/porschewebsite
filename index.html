@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Porsche</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header id="mainHeader">
+  <img src="img/porsche-logo.jpg" alt="Porsche Logo" class="logo">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#cars">Cars</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Hero / Showroom Section -->
+  <section id="home" class="hero-section">
+    <img src="img/showroom.jpg" alt="Showroom" class="hero-img">
+  </section>
+
+  <!-- Feature / Descriptive Text -->
+  <section class="feature-section">
+    <h1>Experience the Porsche 911 Turbo S</h1>
+    <p>
+      Step into the world of Porsche. The 911 Turbo S combines breathtaking performance with refined luxury. Every detail is designed for driving pleasure and ultimate comfort. 
+      Customize your car’s exterior, interior, and seats to make it uniquely yours. Precision engineering, innovative technology, and iconic design come together for an unrivaled driving experience.
+    </p>
+  </section>
+
+  <!-- Buy / Rent Section with Side Car Image -->
+  <section id="cars" class="cars-section">
+    <div class="buy-rent-container">
+      <div class="buttons-text">
+        <h2>Porsche 911 Turbo S</h2>
+        <p>Own the legend. Rent for a thrill. Customize your experience with Porsche.</p>
+        <button onclick="window.location.href='911-turbo-s.html'">Buy</button>
+        <button onclick="showRentNotification()">Rent</button>
+      </div>
+      <div class="car-side-img">
+        <img src="img/911-turbo-s/exterior_red.jpg" alt="911 Turbo S">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="rentNotification" class="notification">
+  🚘 Porsche 911 Turbo S has been rented!
+  <span onclick="closeNotification()">✖</span>
+</div>
+
+<footer>
+  <p>&copy; 2025 Porsche</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

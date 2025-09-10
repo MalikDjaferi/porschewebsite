@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Porsche 911 Turbo S Configurator</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header id="mainHeader">
+  <img src="img/porsche-logo.jpg" alt="Porsche Logo" class="logo">
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+</header>
+
+<main class="configurator-container">
+
+  <!-- Left-side Car Image -->
+  <div class="car-image-container">
+    <img id="carImage" src="img/911-turbo-s/exterior_red.jpg" alt="911 Turbo S">
+  </div>
+
+  <!-- Scrollable Config Sections -->
+  <div class="config-scroll">
+
+    <!-- Exterior -->
+    <section class="config-section fullpage-section">
+      <div class="config-overlay">
+        <h2>Exterior Color</h2>
+        <p>Choose your preferred exterior finish.</p>
+        <div class="options">
+          <button data-image="exterior_red.jpg"><span class="color-preview" style="background:red;"></span> Red</button>
+          <button data-image="exterior_blue.jpg"><span class="color-preview" style="background:blue;"></span> Blue</button>
+          <button data-image="exterior_black.jpg"><span class="color-preview" style="background:black;"></span> Black</button>
+          <button data-image="exterior_white.jpg"><span class="color-preview" style="background:white; border:1px solid #ccc;"></span> White</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interior -->
+    <section class="config-section fullpage-section">
+      <div class="config-overlay">
+        <h2>Interior Color</h2>
+        <p>Customize the interior to match your style.</p>
+        <div class="options">
+          <button data-image="interior_white.jpg"><span class="color-preview" style="background:white; border:1px solid #ccc;"></span> White</button>
+          <button data-image="interior_black.jpg"><span class="color-preview" style="background:black;"></span> Black</button>
+          <button data-image="interior_red.jpg"><span class="color-preview" style="background:red;"></span> Red</button>
+          <button data-image="interior_blue.jpg"><span class="color-preview" style="background:blue;"></span> Blue</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seats -->
+    <section class="config-section fullpage-section">
+      <div class="config-overlay">
+        <h2>Seats</h2>
+        <p>Choose the seat type that suits your driving style.</p>
+        <div class="options">
+          <button data-image="seat_normal.jpg">Normal</button>
+          <button data-image="seat_sport.jpg">Sport</button>
+          <button data-image="seat_sport_plus.jpg">Sport+</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Porsche</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
