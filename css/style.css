@@ -1,0 +1,64 @@
+/* Reset */
+body, html {
+  margin:0; padding:0;
+  font-family:'Montserrat', sans-serif;
+  scroll-behavior:smooth;
+  background:#fff;
+  overflow-x:hidden;
+}
+
+/* Header */
+header {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:15px 40px; position:fixed; width:100%; top:0; background:rgba(255,255,255,0.95);
+  box-shadow:0 2px 6px rgba(0,0,0,0.1); z-index:1000; transition:top 0.3s ease-in-out;
+}
+header.hidden { top:-100px; }
+header .logo { height:50px; }
+nav a { margin-left:20px; text-decoration:none; color:#111; font-weight:700; }
+nav a:hover { color:#111; }
+
+/* Notification */
+.notification {
+  position: fixed; top:20px; left:50%; transform:translateX(-50%);
+  background:#dff0d8; color:#3c763d; padding:15px 30px; border-radius:5px; display:none;
+  box-shadow:0 4px 8px rgba(0,0,0,0.2); font-weight:bold; z-index:2000;
+}
+.notification span { margin-left:15px; cursor:pointer; }
+
+/* Hero */
+.hero-section { height:80vh; width:100%; overflow:hidden; }
+.hero-img { width:100%; height:100%; object-fit:cover; }
+
+/* Feature text */
+.feature-section { padding:80px 20px; text-align:center; max-width:1000px; margin:0 auto; }
+.feature-section h1 { font-size:3em; margin-bottom:20px; }
+.feature-section p { font-size:1.3em; line-height:1.6; }
+
+/* Buy/Rent Section with side image */
+.buy-rent-container { display:flex; align-items:center; justify-content:center; gap:50px; flex-wrap:wrap; padding:80px 20px; }
+.buttons-text { max-width:500px; text-align:center; }
+.buttons-text h2 { font-size:2.5em; margin-bottom:15px; }
+.buttons-text p { font-size:1.2em; margin-bottom:30px; }
+.buttons-text button {
+  padding:20px 60px; margin:10px; font-size:1.2em; font-weight:bold; border-radius:50px; border:none;
+  cursor:pointer; background:#111; color:white; transition:0.3s; box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+.buttons-text button:hover { background:white; color:#111; }
+.car-side-img img { width:500px; border-radius:8px; }
+
+/* Configurator */
+.configurator-container { display:flex; max-width:1200px; margin:120px auto; gap:40px; padding:0 20px; }
+.car-image-container { flex:1; position:sticky; top:50%; transform:translateY(-50%); max-width:600px; }
+.car-image-container img { width:100%; border-radius:8px; transition:0.6s; }
+.config-scroll { flex:1; }
+.fullpage-section { height:100vh; display:flex; align-items:center; justify-content:center; scroll-snap-align:start; }
+.config-overlay { background:rgba(255,255,255,0.95); padding:40px 50px; border-radius:12px; text-align:center; box-shadow:0 6px 15px rgba(0,0,0,0.3); max-width:500px; }
+.config-overlay h2 { font-size:2em; margin-bottom:20px; }
+.config-overlay p { font-size:1.1em; line-height:1.4; margin-bottom:20px; }
+.config-overlay .options button { margin:10px; padding:15px 30px; border:none; border-radius:50px; font-weight:bold; cursor:pointer; background:#111; color:white; transition:0.3s; }
+.config-overlay .options button:hover { background:white; color:#111; }
+.color-preview { display:block; width:30px; height:30px; margin:0 auto 5px auto; border-radius:50%; border:1px solid #111; }
+
+/* Footer */
+footer { text-align:center; padding:20px; border-top:1px solid #ccc; }
